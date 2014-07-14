@@ -1,0 +1,10 @@
+==========================================
+Theme: Perfetta
+Author: GavickPro
+Author URI: http://www.gavick.com
+Current Version: 1.0.0
+==========================================
+
+1.0.0
+-----
+- New Theme
