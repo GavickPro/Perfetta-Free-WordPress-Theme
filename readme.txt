@@ -23,7 +23,7 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 
 == Installation ==
 
-1. Upload the `Perfetta` folder to the `/wp-content/themes/` directory 
+1. Upload the `perfetta` folder to the `/wp-content/themes/` directory 
 2. Activate the Perfetta theme through the 'Themes' menu in WordPress
 3. See Appearance -> Customize to change theme options or click the `Customize` button over the theme thumbnails in the Appearance -> Themes menu in WordPress
 
@@ -45,7 +45,8 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 * Translation-ready
 
 == Support and Contribute ==
-- Check out the [Github repo](https://github.com/GavickPro/Perfetta-Free-WordPress-Theme) to contribute or report issus
+- Check out the Perfetta theme documentation: http://www.gavick.com/documentation/wordpress-themes/wordpress-themes-configuration/perfetta-wordpress-theme-configuration/
+- Check out the Github repo: https://github.com/GavickPro/Perfetta-Free-WordPress-Theme to contribute or report issues
 
 == Changelog ==
 1.0 - August 7, 2014
