@@ -85,6 +85,9 @@ function perfetta_setup() {
 	$args = array(
 		'default-color' => 'f3f3f3',
 		'default-image' => get_template_directory_uri() . '/images/bg-desktop.jpg',
+		'default-repeat' => 'no-repeat',
+		'default-position-x' => 'left',
+		'default-attachment' => 'fixed'
 	);
 	add_theme_support( 'custom-background', $args );
 

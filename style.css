@@ -662,11 +662,8 @@ div.nav-menu > ul {
 	text-transform: uppercase;
 }
 
-.nav-menu > li > a {
-	font-size: 12px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+.nav-menu > ul > li > a {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .35);
 }
 
 .nav-menu li a:active,
@@ -675,13 +672,15 @@ div.nav-menu > ul {
 	color: #fff;
 }
 
-.nav-menu .sub-menu li a {
+.nav-menu .sub-menu li a,
+.nav-menu .children li a {
 	color: #777;
 	font-weight: 300;
 	text-transform: none;
 }
 
-.nav-menu .sub-menu {
+.nav-menu .sub-menu,
+.nav-menu .children {
 	background-color: #fff;
 	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
 	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
@@ -694,14 +693,17 @@ div.nav-menu > ul {
 	z-index: 99999;
 }
 
-.nav-menu .sub-menu ul {
+.nav-menu .sub-menu ul,
+.nav-menu .children ul {
 	border-left: 0;
 	left: 100%;
 	top: 0;
 }
 
 .nav-menu .sub-menu li,
-.nav-menu .sub-menu a {
+.nav-menu .sub-menu a,
+.nav-menu .children li,
+.nav-menu .children a {
 	width: 100%;
 }
 
@@ -889,7 +891,8 @@ ul.nav-menu li:hover > ul,
 #aside-menu li a:hover {
 	color: #fff;
 }
-#aside-menu .sub-menu {
+#aside-menu .sub-menu,
+#aside-menu .children {
 	padding-left: 0;
 }
 #aside-menu .nav-aside-menu {
