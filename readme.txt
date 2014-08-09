@@ -49,5 +49,11 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 - Check out the Github repo: https://github.com/GavickPro/Perfetta-Free-WordPress-Theme to contribute or report issues
 
 == Changelog ==
-1.0 - August 7, 2014
+
+1.0.1 - August 8, 2014
+- Improved readme.txt and descriptions in the style.css file
+- Fixed problem with background configuration directly after the installation
+- Fixed problem with the submenu items
+
+1.0.0 - August 7, 2014
 - Initial release
