@@ -331,7 +331,10 @@ function perfetta_customizer_css() {
         .social-menu li:active,
         .social-menu li:focus,
         .social-menu li:hover,
-        #gk-copyrights a {
+        #gk-copyrights a,
+        .nav-menu > li > a:active,
+        .nav-menu > li > a:focus,
+        .nav-menu > li > a:hover {
         	color: <?php echo $primary_color; ?>;
         }
         button,
@@ -390,7 +393,7 @@ function perfetta_customize_preview() {
     	    value.bind( function( to ) {
     	    	to = to ? to : '#e83a34';
     	    	// set colors:
-    	    	var new_css = 'a, blockquote:before, button, input[type="submit"], input[type="button"], input[type="reset"], .nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a, .entry-title.sticky span:before, .entry-title a:hover, .entry-summary .readon, .author-description .author-title, .comment-author .fn, .comment-author .url, .comment-reply-link, .comment-reply-login, .social-menu li:active, .social-menu li:focus, .social-menu li:hover, #gk-copyrights a { color: '+to+'; } button, input[type="submit"], input[type="button"], input[type="reset"], .entry-summary .readon { border: 1px solid '+to+'; } ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, #content > article > aside > time, .paging-navigation .nav-links, .paging-navigation a:active, .paging-navigation a:focus, .paging-navigation a:hover { background-color: '+to+'; } #content > article >aside:after { border-left: 8px solid '+to+'; }';
+    	    	var new_css = 'a, blockquote:before, button, input[type="submit"], input[type="button"], input[type="reset"], .nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a, .entry-title.sticky span:before, .entry-title a:hover, .entry-summary .readon, .author-description .author-title, .comment-author .fn, .comment-author .url, .comment-reply-link, .comment-reply-login, .social-menu li:active, .social-menu li:focus, .social-menu li:hover, #gk-copyrights a, .nav-menu > li > a:active, .nav-menu > li > a:focus, .nav-menu > li > a:hover { color: '+to+'; } button, input[type="submit"], input[type="button"], input[type="reset"], .entry-summary .readon { border: 1px solid '+to+'; } ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, #content > article > aside > time, .paging-navigation .nav-links, .paging-navigation a:active, .paging-navigation a:focus, .paging-navigation a:hover { background-color: '+to+'; } #content > article >aside:after { border-left: 8px solid '+to+'; }';
     	    	
     	    	if($(document).find('#perfetta-new-css-1').length) {
     	    		$(document).find('#perfetta-new-css-1').remove();
