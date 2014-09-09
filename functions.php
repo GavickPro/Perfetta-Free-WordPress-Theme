@@ -146,7 +146,7 @@ function perfetta_styles() {
 	wp_enqueue_style('perfetta-fonts-body', get_theme_mod('perfetta_body_google_font', '//fonts.googleapis.com/css?family=Raleway:300,400,700'), false);
 	
 	// Font Awesome
-	wp_enqueue_style('perfetta-font-awesome', get_template_directory_uri() . '/css/font.awesome.css', false, '4.0.3' );
+	wp_enqueue_style('perfetta-font-awesome', get_template_directory_uri() . '/css/font.awesome.css', false, '4.2.0' );
 
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'perfetta-style', get_stylesheet_uri());
