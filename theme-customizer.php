@@ -107,6 +107,14 @@ if ( isset( $wp_customize ) ) {
 			)
 		);
 		
+		$wp_customize->add_setting(
+            'perfetta_word_break',
+            array(
+                'default'   => '0',
+                'capability' => 'edit_theme_options'
+            )
+        );
+		
 		// Add control for the settings
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(
@@ -244,6 +252,15 @@ if ( isset( $wp_customize ) ) {
 		        )
 		    )
 		);
+		
+		$wp_customize->add_control(
+            'perfetta_word_break',
+            array(
+                'section'  => 'perfetta_layout_options',
+                'label'    => __('Enable word-break', 'perfetta'),
+                'type'     => 'checkbox'
+            )
+        );
 	}
 	
 	add_action( 'customize_register', 'perfetta_init_customizer' );
@@ -281,6 +298,18 @@ function perfetta_customizer_css() {
     	body { font-family: <?php echo $body_perfetta_font; ?> }
         .site-title { font-family: <?php echo $perfetta_font; ?> }
     
+    	<?php if(get_theme_mod('perfetta_word_break', '1') == '1') : ?>
+        body {
+            -ms-word-break: break-all;
+            word-break: break-all;
+            word-break: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+        <?php endif; ?>
+    	
         a,
         blockquote:before,
         button,
