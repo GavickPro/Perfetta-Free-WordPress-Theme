@@ -1,14 +1,14 @@
-=== Perfetta ===
+# Perfetta
 
 Perfetta WordPress Theme, Copyright (c) 2014 Gavick.com
 Perfetta Wordpress Theme is distributed under the GNU GPL license 2.0
 http://www.gnu.org/licenses/gpl-2.0.html
 
-== Description == 
+## Description
 
 A clear responsive food-focused WordPress theme that cuts out bloated features and focuses on understandable, attractive content. Perfect for small, intimate cafés or restaurants, or just bloggers with a taste for the finer things in life! With a one-column layout, your blog can combine simplicity with minimalist design for a refreshingly clean look that's sure to keep people reading.
 
-== Used resources ==
+## Used resources
 
 The following resources have been used:
 
@@ -21,13 +21,14 @@ Photo visible in the theme screenshot: http://pixabay.com/en/cake-coffee-suites-
 
 Photos are released under the CC0 license - http://creativecommons.org/publicdomain/zero/1.0/deed.en
 
-== Installation ==
+## Installation
 
-1. Upload the `perfetta` folder to the `/wp-content/themes/` directory 
+1. Upload the **perfetta** folder to the **/wp-content/themes/** directory 
 2. Activate the Perfetta theme through the 'Themes' menu in WordPress
-3. See Appearance -> Customize to change theme options or click the `Customize` button over the theme thumbnails in the Appearance -> Themes menu in WordPress
+3. See **Appearance -> Customize** to change theme options or click the **Customize** button over the theme thumbnails in the **Appearance -> Themes** menu in WordPress
 
-== Features ==
+## Features
+
 * Supports IE9+
 * One-column design
 * Responsive layout
@@ -44,16 +45,18 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 * Threaded comments
 * Translation-ready
 
-== Support and Contribute ==
+## Support and Contribute
 - Check out the Perfetta theme documentation: http://www.gavick.com/documentation/wordpress-themes/wordpress-themes-configuration/perfetta-wordpress-theme-configuration/
 - Check out the Github repo: https://github.com/GavickPro/Perfetta-Free-WordPress-Theme to contribute or report issues
 
-== Changelog ==
+## Changelog
 
-1.0.1 - August 8, 2014
+### 1.0.1 - August 8, 2014
+
 - Improved readme.txt and descriptions in the style.css file
 - Fixed problem with background configuration directly after the installation
 - Fixed problem with the submenu items
 
-1.0.0 - August 7, 2014
+### 1.0.0 - August 7, 2014
+
 - Initial release
