@@ -5,10 +5,10 @@
 #
 #, fuzzy
 msgid   ""
-msgstr  "Project-Id-Version: 1.0.0\n"
+msgstr  "Project-Id-Version: 1.0.2\n"
         "Report-Msgid-Bugs-To: \n"
-        "POT-Creation-Date: 2014-07-10 12:12+0200\n"
-        "PO-Revision-Date: 2014-07-10 12:12+0200\n"
+        "POT-Creation-Date: 2014-09-10 12:12+0200\n"
+        "PO-Revision-Date: 2014-09-10 12:12+0200\n"
         "Last-Translator: Tomasz Dziuda <dziudek@gavick.com>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
         "MIME-Version: 1.0\n"
@@ -29,11 +29,11 @@ msgstr  ""
 msgid   "&larr; Older Comments"
 msgstr  ""
 
-#: functions.php:269 functions.php:275
+#: functions.php:272 functions.php:278
 msgid   ", "
 msgstr  ""
 
-#: theme-customizer.php:202
+#: theme-customizer.php:210
 msgid   "1 Column"
 msgstr  ""
 
@@ -41,7 +41,7 @@ msgstr  ""
 msgid   "1 Comment"
 msgstr  ""
 
-#: theme-customizer.php:203
+#: theme-customizer.php:211
 msgid   "2 Columns"
 msgstr  ""
 
@@ -49,11 +49,11 @@ msgstr  ""
 msgid   "2 Comments"
 msgstr  ""
 
-#: theme-customizer.php:204
+#: theme-customizer.php:212
 msgid   "3 Columns"
 msgstr  ""
 
-#: functions.php:232
+#: functions.php:235
 msgid   "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr  ""
 
@@ -66,11 +66,11 @@ msgstr  ""
 msgid   "All posts by %s"
 msgstr  ""
 
-#: theme-customizer.php:199
+#: theme-customizer.php:207
 msgid   "Amount of bottom columns"
 msgstr  ""
 
-#: functions.php:204
+#: functions.php:207
 msgid   "Appears at the bottom of the website."
 msgstr  ""
 
@@ -78,11 +78,11 @@ msgstr  ""
 msgid   "Blog Archives"
 msgstr  ""
 
-#: theme-customizer.php:169
+#: theme-customizer.php:177
 msgid   "Body Font"
 msgstr  ""
 
-#: functions.php:202
+#: functions.php:205
 msgid   "Bottom widget area"
 msgstr  ""
 
@@ -91,7 +91,7 @@ msgstr  ""
 msgid   "Category Archives: %s"
 msgstr  ""
 
-#: theme-customizer.php:213
+#: theme-customizer.php:221
 msgid   "Color of the bottom"
 msgstr  ""
 
@@ -108,28 +108,32 @@ msgstr  ""
 msgid   "Daily Archives: %s"
 msgstr  ""
 
-#: theme-customizer.php:216
+#: theme-customizer.php:224
 msgid   "Dark background"
 msgstr  ""
 
-#: theme-customizer.php:239
+#: theme-customizer.php:247
 msgid   "Date format"
 msgstr  ""
 
-#: theme-customizer.php:242
+#: theme-customizer.php:250
 msgid   "Default theme format"
 msgstr  ""
 
-#: theme-customizer.php:229
+#: theme-customizer.php:237
 msgid   "Disabled"
 msgstr  ""
 
 #: comments-template.php:30 comments-template.php:65 page.php:34
-#: functions.php:282
+#: functions.php:285
 msgid   "Edit"
 msgstr  ""
 
-#: theme-customizer.php:230
+#: theme-customizer.php:260
+msgid   "Enable word-break"
+msgstr  ""
+
+#: theme-customizer.php:238
 msgid   "Enabled"
 msgstr  ""
 
@@ -137,7 +141,7 @@ msgstr  ""
 msgid   "Font options"
 msgstr  ""
 
-#: theme-customizer.php:128
+#: theme-customizer.php:136
 msgid   "Footer Color"
 msgstr  ""
 
@@ -145,15 +149,15 @@ msgstr  ""
 msgid   "Footer Menu"
 msgstr  ""
 
-#: theme-customizer.php:160
+#: theme-customizer.php:168
 msgid   "Google Font URL for Header"
 msgstr  ""
 
-#: theme-customizer.php:190
+#: theme-customizer.php:198
 msgid   "Google Font URL for the Body"
 msgstr  ""
 
-#: theme-customizer.php:139
+#: theme-customizer.php:147
 msgid   "Header Font"
 msgstr  ""
 
@@ -170,7 +174,7 @@ msgstr  ""
 msgid   "Layout & Features"
 msgstr  ""
 
-#: theme-customizer.php:217
+#: theme-customizer.php:225
 msgid   "Light background"
 msgstr  ""
 
@@ -191,7 +195,7 @@ msgstr  ""
 msgid   "Newer Comments &rarr;"
 msgstr  ""
 
-#: functions.php:236
+#: functions.php:239
 msgid   "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr  ""
 
@@ -207,7 +211,7 @@ msgstr  ""
 msgid   "Nothing Found"
 msgstr  ""
 
-#: functions.php:189
+#: functions.php:192
 #, php-format
 msgid   "Page %s"
 msgstr  ""
@@ -226,11 +230,11 @@ msgstr  ""
 msgid   "Post author"
 msgstr  ""
 
-#: functions.php:228
+#: functions.php:231
 msgid   "Posts navigation"
 msgstr  ""
 
-#: theme-customizer.php:116
+#: theme-customizer.php:124
 msgid   "Primary Color"
 msgstr  ""
 
@@ -275,16 +279,16 @@ msgid   "This post is password protected. Enter the password to view any "
         "comments."
 msgstr  ""
 
-#: theme-customizer.php:226
+#: theme-customizer.php:234
 msgid   "Use Scroll Reveal"
 msgstr  ""
 
-#: functions.php:263
+#: functions.php:266
 #, php-format
 msgid   "View all posts by %s"
 msgstr  ""
 
-#: theme-customizer.php:243
+#: theme-customizer.php:251
 msgid   "WordPress Date Format"
 msgstr  ""
 
@@ -304,6 +308,6 @@ msgstr  ""
 msgid   "Your comment is awaiting moderation."
 msgstr  ""
 
-#: functions.php:260
+#: functions.php:263
 msgid   "by "
 msgstr  ""
