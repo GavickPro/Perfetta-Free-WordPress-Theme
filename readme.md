@@ -51,6 +51,14 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 
 ## Changelog
 
+### 1.0.2 - September 10, 2014
+
+- Added main menu 1-level menu item hover color
+- Added option to enable/disable word-break
+- Modify readme.txt to readme.md
+- Font Awesome update to v.4.2.0
+
+
 ### 1.0.1 - August 8, 2014
 
 - Improved readme.txt and descriptions in the style.css file
