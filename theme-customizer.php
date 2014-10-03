@@ -25,6 +25,14 @@ if ( isset( $wp_customize ) ) {
 	    );
 	    
 	    // Add new settings
+	    $wp_customize->add_setting(
+	    	'perfetta_logo',
+	    	array(
+	    		'default' => '',
+	    		'capability' => 'edit_theme_options'
+	    	)
+	    );
+	    
 	    $wp_customize->add_setting( 
 	    	'perfetta_primary_color', 
 	    	array( 
@@ -116,6 +124,18 @@ if ( isset( $wp_customize ) ) {
         );
 		
 		// Add control for the settings
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control( 
+				$wp_customize, 
+				'perfetta_logo', 
+				array(
+					'label'      => __('Logo image', 'perfetta'),
+					'section'    => 'title_tagline',
+					'settings'   => 'perfetta_logo'
+				) 
+			)
+		);
+		
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(
 				$wp_customize, 
