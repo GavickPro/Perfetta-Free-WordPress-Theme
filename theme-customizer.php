@@ -29,7 +29,8 @@ if ( isset( $wp_customize ) ) {
 	    	'perfetta_logo',
 	    	array(
 	    		'default' => '',
-	    		'capability' => 'edit_theme_options'
+	    		'capability' => 'edit_theme_options',
+	    		'sanitize_callback' => 'sanitize_text_field'
 	    	)
 	    );
 	    
@@ -38,7 +39,8 @@ if ( isset( $wp_customize ) ) {
 	    	array( 
 	    		'default' => '#e83a34', 
 	    		'capability' => 'edit_theme_options',
-	    		'transport' => 'postMessage'
+	    		'transport' => 'postMessage',
+	    		'sanitize_callback' => 'sanitize_text_field'
 	    	)
 	    );
 	    
@@ -47,7 +49,8 @@ if ( isset( $wp_customize ) ) {
 	    	array( 
 	    		'default' => '#fff', 
 	    		'capability' => 'edit_theme_options',
-	    		'transport' => 'postMessage'
+	    		'transport' => 'postMessage',
+	    		'sanitize_callback' => 'sanitize_text_field'
 	    	)
 	    );
 	    
@@ -55,7 +58,8 @@ if ( isset( $wp_customize ) ) {
 			'perfetta_font',
 			array(
 			    'default'   => 'google',
-			    'capability' => 'edit_theme_options' 
+			    'capability' => 'edit_theme_options',
+			    'sanitize_callback' => 'sanitize_text_field'
 			)
 		);
 		
@@ -63,7 +67,8 @@ if ( isset( $wp_customize ) ) {
 		    'perfetta_google_font',
 		    array(
 		        'default'   => '//fonts.googleapis.com/css?family=Cookie',
-		        'capability' => 'edit_theme_options'
+		        'capability' => 'edit_theme_options',
+		        'sanitize_callback' => 'sanitize_text_field'
 		    )
 		);
 		
@@ -71,15 +76,17 @@ if ( isset( $wp_customize ) ) {
 			'perfetta_body_font',
 			array(
 			    'default'   => 'google',
-			    'capability' => 'edit_theme_options'
-				)
-			);
+			    'capability' => 'edit_theme_options',
+			    'sanitize_callback' => 'sanitize_text_field'
+			)
+		);
 			
 		$wp_customize->add_setting(
 		    'perfetta_body_google_font',
 		    array(
 		        'default'   => '//fonts.googleapis.com/css?family=Raleway:300,400,700',
-		        'capability' => 'edit_theme_options'
+		        'capability' => 'edit_theme_options',
+		        'sanitize_callback' => 'sanitize_text_field'
 		    )
 		);
 		
@@ -87,7 +94,8 @@ if ( isset( $wp_customize ) ) {
 			'perfetta_bottom_column',
 			array( 
 				'default'   => '2',
-				'capability' => 'edit_theme_options' 
+				'capability' => 'edit_theme_options',
+				'sanitize_callback' => 'sanitize_text_field'
 			)
 		);
 		
@@ -95,7 +103,8 @@ if ( isset( $wp_customize ) ) {
 			'perfetta_top_color',
 			array( 
 				'default'   => 'light',
-				'capability' => 'edit_theme_options' 
+				'capability' => 'edit_theme_options',
+				'sanitize_callback' => 'sanitize_text_field'
 			)
 		);
 		
@@ -103,7 +112,8 @@ if ( isset( $wp_customize ) ) {
 			'perfetta_bottom_color',
 			array( 
 				'default'   => 'dark',
-				'capability' => 'edit_theme_options' 
+				'capability' => 'edit_theme_options',
+				'sanitize_callback' => 'sanitize_text_field'
 			)
 		);
 		
@@ -111,7 +121,8 @@ if ( isset( $wp_customize ) ) {
 			'perfetta_scroll_reveal',
 			array( 
 				'default'   => '1',
-				'capability' => 'edit_theme_options' 
+				'capability' => 'edit_theme_options',
+				'sanitize_callback' => 'sanitize_text_field'
 			)
 		);
 		
@@ -119,7 +130,8 @@ if ( isset( $wp_customize ) ) {
 			'perfetta_date_format',
 			array( 
 				'default'   => 'default',
-				'capability' => 'edit_theme_options' 
+				'capability' => 'edit_theme_options',
+				'sanitize_callback' => 'sanitize_text_field'
 			)
 		);
 		
@@ -127,7 +139,8 @@ if ( isset( $wp_customize ) ) {
             'perfetta_word_break',
             array(
                 'default'   => '0',
-                'capability' => 'edit_theme_options'
+                'capability' => 'edit_theme_options',
+                'sanitize_callback' => 'sanitize_text_field'
             )
         );
 		
