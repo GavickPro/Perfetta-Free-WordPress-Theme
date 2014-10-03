@@ -90,6 +90,13 @@ function perfetta_setup() {
 		'default-attachment' => 'fixed'
 	);
 	add_theme_support( 'custom-background', $args );
+	
+	// Support for infinite scroll from Jetpack
+	add_theme_support( 'infinite-scroll', array(
+		'container'  => 'content',
+		'footer'     => 'gk-footer',
+		'wrapper'   => false
+	));
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );

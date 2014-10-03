@@ -357,6 +357,10 @@ video {
 	max-width: 100%;
 }
 
+.entry-header > .video-wrapper > iframe {
+	width: 100%;
+}
+
 /* Override the Twitter embed fixed width. */
 .entry-content .twitter-tweet-rendered {
 	max-width: 100% !important;
@@ -2055,7 +2059,7 @@ select {
 
 #gk-footer .widget-title {
 	color: #fff;
-	font-size: 12px;
+	font-size: 16px;
 	margin: 0 0 16px 0;
 	text-transform: uppercase;
 }
@@ -2096,7 +2100,7 @@ select {
 #gk-bottom .widget {
 	color: #8e9798;
 	font-family: Arial, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 #gk-bottom p { 
