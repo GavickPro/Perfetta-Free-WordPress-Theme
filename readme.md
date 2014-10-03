@@ -51,8 +51,11 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 
 ## Changelog
 
-### 1.0.2 - September 10, 2014
+### 1.1.0 - October 3, 2014
 
+- Added top widget area
+- Added support for Jetpack infinite scroll
+- Added support for logo image
 - Added main menu 1-level menu item hover color
 - Added option to enable/disable word-break
 - Modify readme.txt to readme.md
