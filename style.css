@@ -4,7 +4,7 @@ Theme URI: http://www.gavick.com/wordpress-themes/perfetta-bar,171.html
 Author: GavickPro
 Author URI: http://www.gavick.com
 Description: A clear responsive food-focused WordPress theme that cuts out bloated features and focuses on understandable, attractive content. Perfect for small, intimate cafés or restaurants, or just bloggers with a taste for the finer things in life! With a one-column layout, your blog can combine simplicity with minimalist design for a refreshingly clean look that's sure to keep people reading.
-Version: 1.0.2
+Version: 1.1.0
 Tags: red, white, one-column, fluid-layout, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
 License: GNU GPL v.2.0
 License URI: LICENSE.txt
@@ -152,6 +152,7 @@ pre {
 /* Clearing floats */
 .clear:after,
 .attachment .entry-header:after,
+#gk-top .widget-area:after,
 #gk-footer .widget-area:after,
 .entry-content:after,
 .page-content:after,
@@ -169,6 +170,8 @@ pre {
 .clear:after,
 .attachment .entry-header:before,
 .attachment .entry-header:after,
+#gk-top .widget-area:before,
+#gk-top .widget-area:after,
 #gk-footer .widget-area:before,
 #gk-footer .widget-area:after,
 .entry-content:before,
@@ -447,9 +450,11 @@ img.wp-smiley,
 
 .page #content > article > div,
 .page #comments,
+.page #gk-top > div,
 .page #gk-footer > div,
 .attachment #content > article > div,
 .attachment #comments,
+.attachment #gk-top > div,
 .attachment #gk-footer > div {
 	margin-left: 0;
 }
@@ -1594,6 +1599,7 @@ footer.entry-meta {
 	padding: 0 0 45px 0;
 }
 
+.search-no-results #gk-top > div,
 .search-no-results #gk-footer > div {
 	margin-left: 0;
 }
@@ -1614,6 +1620,7 @@ footer.entry-meta {
  * ----------------------------------------------------------------------------
  */
 
+.error404 #gk-top > div,
 .error404 #gk-footer > div {
 	margin-left: 0;
 }
@@ -2016,11 +2023,14 @@ footer.entry-meta {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
+#gk-top .widget_calendar tbody td,
 #gk-footer .widget_calendar tbody td {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
-.widget_calendar tbody .pad, #gk-footer .widget_calendar tbody .pad {
+.widget_calendar tbody .pad, 
+#gk-top .widget_calendar tbody .pad,
+#gk-footer .widget_calendar tbody .pad {
 	background-color: transparent;
 }
 
@@ -2028,6 +2038,8 @@ footer.entry-meta {
 select {
 	max-width: 100%;
 }
+#gk-top .wp-caption .wp-caption-text, 
+#gk-top .entry-caption, .gallery-caption,
 #gk-bottom .wp-caption .wp-caption-text, 
 #gk-bottom .entry-caption, .gallery-caption {
 	color: #999;
@@ -2040,6 +2052,7 @@ select {
 .widget widget_rss li {
 	padding: 10px 0;
 }
+#gk-top .search-field,
 #gk-bottom .search-field {
 	width: 100%;
 }
@@ -2057,6 +2070,11 @@ select {
 	width: 100%;
 }
 
+#gk-top {
+	margin-bottom: 60px;
+}
+
+#gk-top .widget-title,
 #gk-footer .widget-title {
 	color: #fff;
 	font-size: 16px;
@@ -2064,23 +2082,32 @@ select {
 	text-transform: uppercase;
 }
 
+#gk-top .widget-area,
 #gk-footer .widget-area {
 	text-align: left;
 }
 
+#gk-top .widget-area,
 #gk-footer .widget-area {
 	background: #34373b;
 	padding: 50px 25px;
 }
 
+#gk-top .widget-area {
+	padding: 50px 25px 30px 25px;
+}
+
+#gk-top .widget-area .widget:nth-child(3n+1),
 #gk-footer .widget-area .widget:nth-child(3n+1) {
 	clear: both;
 }
 
+#gk-top > div,
 #gk-footer > div {
 	margin-left: 170px;
 }
 
+#gk-top .widget,
 #gk-footer .widget {
 	background: transparent;
 	color: #fff;
@@ -2090,12 +2117,17 @@ select {
 	width: 50%;
 }
 
+#gk-top a:active,
+#gk-top a:focus,
+#gk-top a:hover,
 #gk-bottom a:active,
 #gk-bottom a:focus,
 #gk-bottom a:hover {
 	color: #fff;
 }
 
+#gk-top,
+#gk-top .widget,
 #gk-bottom,
 #gk-bottom .widget {
 	color: #8e9798;
@@ -2103,9 +2135,12 @@ select {
 	font-size: 14px;
 }
 
+#gk-top p,
 #gk-bottom p { 
 	margin: 0 20px 12px 0;
 }
+
+#gk-top p i,
 #gk-bottom p i {
 	color: #c3c8c9;
 	font-size: 14px;
@@ -2113,8 +2148,12 @@ select {
 	position: relative;
 	top: 1px;
 }
+#gk-top .footer-phone,
+#gk-top .footer-email,
 #gk-bottom .footer-phone,
 #gk-bottom .footer-email { float: left; }
+#gk-top dl dt,
+#gk-top dl dd,
 #gk-bottom dl dt,
 #gk-bottom dl dd {
 	display: block;
@@ -2122,9 +2161,11 @@ select {
 	margin-bottom: 12px;
 	padding: 0;
 }
+#gk-top dl dd,
 #gk-bottom dl dd { 
 	margin: 0 20px 12px 4px; 
 }
+#gk-top dl dt:nth-child(5n),
 #gk-bottom dl dt:nth-child(5n) { clear: both; }
 
 #gk-social {
@@ -2184,15 +2225,19 @@ select {
 }
 
 /* Light version of the footer */
+#gk-top.light-bg .widget-title,
 #gk-footer.light-bg .widget-title {
 	color: #333;
 }
 
+#gk-top.light-bg .widget-area,
 #gk-footer.light-bg .widget-area {
 	background: #fff;
 	border-top: 1px solid #e5e5e5;
 }
 
+#gk-top.light-bg .widget_rss .rss-date, 
+#gk-top.light-bg .widget_rss li > cite,
 #gk-footer.light-bg .widget_rss .rss-date, 
 #gk-footer.light-bg .widget_rss li > cite {
 	color: #bbb;
@@ -2230,6 +2275,7 @@ select {
 	.attachment .entry-header,
 	.attachment .entry-content,
 	.post-navigation .nav-links,
+	#gk-top .widget-area,
 	#gk-footer .widget-area {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -2269,6 +2315,7 @@ select {
 		padding-bottom: 40px;
 	}
 	
+	.site-main #gk-top,
 	.site-main #gk-bottom {
 		height: auto;
 		margin: 0 auto;
@@ -2330,6 +2377,7 @@ select {
 	.gallery-caption {
 		display: none;
 	}
+	#gk-top .widget,
 	#gk-footer .widget {
 		width: 100%!important;
 	}
@@ -2419,6 +2467,7 @@ select {
 	  	margin-left: 0px;
 	}
 	 
+	#gk-top > div,
 	#gk-footer > div {
 	 	margin-left: 0px;
 	}

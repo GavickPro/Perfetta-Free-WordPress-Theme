@@ -40,4 +40,13 @@
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 				
+		<?php if ( is_active_sidebar( 'top' ) ) : ?>
+		<?php $top_color = get_theme_mod('perfetta_top_color', 'light'); ?>
+		<div id="gk-top"<?php echo $top_color == 'dark' ? '' : ' class="light-bg"'; ?> role="complementary">
+			<div class="widget-area">
+				<?php dynamic_sidebar( 'top' ); ?>
+			</div>
+		</div>
+		<?php endif; ?>		
+		
 		<div id="main" class="site-main">

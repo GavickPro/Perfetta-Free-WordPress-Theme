@@ -209,6 +209,16 @@ add_filter( 'wp_title', 'perfetta_wp_title', 10, 2 );
  */
 function perfetta_widgets_init() {
 	register_sidebar( array(
+		'name'          => __( 'Top widget area', 'perfetta' ),
+		'id'            => 'top',
+		'description'   => __( 'Appears at the top of the website.', 'perfetta' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	
+	register_sidebar( array(
 		'name'          => __( 'Bottom widget area', 'perfetta' ),
 		'id'            => 'bottom',
 		'description'   => __( 'Appears at the bottom of the website.', 'perfetta' ),

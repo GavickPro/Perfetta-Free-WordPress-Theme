@@ -92,6 +92,14 @@ if ( isset( $wp_customize ) ) {
 		);
 		
 		$wp_customize->add_setting(
+			'perfetta_top_color',
+			array( 
+				'default'   => 'light',
+				'capability' => 'edit_theme_options' 
+			)
+		);
+		
+		$wp_customize->add_setting(
 			'perfetta_bottom_color',
 			array( 
 				'default'   => 'dark',
@@ -230,6 +238,19 @@ if ( isset( $wp_customize ) ) {
 		            '1'     => __('1 Column', 'perfetta'),
 		            '2'     => __('2 Columns', 'perfetta'),
 		            '3'     => __('3 Columns', 'perfetta')
+		        )
+		    )
+		);
+		
+		$wp_customize->add_control(
+		    'perfetta_top_color',
+		    array(
+		        'section'  => 'perfetta_layout_options',
+		        'label'    => __('Color of the top', 'perfetta'),
+		        'type'     => 'select',
+		        'choices'  => array(
+		            'dark'     => __('Dark background', 'perfetta'),
+		            'light'     => __('Light background', 'perfetta')
 		        )
 		    )
 		);
@@ -390,6 +411,7 @@ function perfetta_customizer_css() {
     else { $width = '33%'; }
 	 ?>
     <style type="text/css">
+        #gk-top .widget,
         #gk-footer .widget { width: <?php echo $width ?>; }
     </style> 
     <?php 
