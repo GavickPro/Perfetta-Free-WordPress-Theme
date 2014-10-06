@@ -51,6 +51,10 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 
 ## Changelog
 
+### 1.1.1 - October 6, 2014
+
+- Improved Theme Customizer sanitization
+
 ### 1.1.0 - October 3, 2014
 
 - Added top widget area
