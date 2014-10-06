@@ -30,7 +30,7 @@ if ( isset( $wp_customize ) ) {
 	    	array(
 	    		'default' => '',
 	    		'capability' => 'edit_theme_options',
-	    		'sanitize_callback' => 'sanitize_text_field'
+	    		'sanitize_callback' => 'esc_url_raw'
 	    	)
 	    );
 	    
@@ -40,7 +40,7 @@ if ( isset( $wp_customize ) ) {
 	    		'default' => '#e83a34', 
 	    		'capability' => 'edit_theme_options',
 	    		'transport' => 'postMessage',
-	    		'sanitize_callback' => 'sanitize_text_field'
+	    		'sanitize_callback' => 'sanitize_hex_color'
 	    	)
 	    );
 	    
@@ -50,7 +50,7 @@ if ( isset( $wp_customize ) ) {
 	    		'default' => '#fff', 
 	    		'capability' => 'edit_theme_options',
 	    		'transport' => 'postMessage',
-	    		'sanitize_callback' => 'sanitize_text_field'
+	    		'sanitize_callback' => 'sanitize_hex_color'
 	    	)
 	    );
 	    
@@ -59,7 +59,7 @@ if ( isset( $wp_customize ) ) {
 			array(
 			    'default'   => 'google',
 			    'capability' => 'edit_theme_options',
-			    'sanitize_callback' => 'sanitize_text_field'
+			    'sanitize_callback' => 'perfetta_sanitize_font'
 			)
 		);
 		
@@ -68,7 +68,7 @@ if ( isset( $wp_customize ) ) {
 		    array(
 		        'default'   => '//fonts.googleapis.com/css?family=Cookie',
 		        'capability' => 'edit_theme_options',
-		        'sanitize_callback' => 'sanitize_text_field'
+		        'sanitize_callback' => 'esc_url_raw'
 		    )
 		);
 		
@@ -77,7 +77,7 @@ if ( isset( $wp_customize ) ) {
 			array(
 			    'default'   => 'google',
 			    'capability' => 'edit_theme_options',
-			    'sanitize_callback' => 'sanitize_text_field'
+			    'sanitize_callback' => 'perfetta_sanitize_font'
 			)
 		);
 			
@@ -86,7 +86,7 @@ if ( isset( $wp_customize ) ) {
 		    array(
 		        'default'   => '//fonts.googleapis.com/css?family=Raleway:300,400,700',
 		        'capability' => 'edit_theme_options',
-		        'sanitize_callback' => 'sanitize_text_field'
+		        'sanitize_callback' => 'esc_url_raw'
 		    )
 		);
 		
@@ -95,7 +95,7 @@ if ( isset( $wp_customize ) ) {
 			array( 
 				'default'   => '2',
 				'capability' => 'edit_theme_options',
-				'sanitize_callback' => 'sanitize_text_field'
+				'sanitize_callback' => 'perfetta_sanitize_bottom_column'
 			)
 		);
 		
@@ -104,7 +104,7 @@ if ( isset( $wp_customize ) ) {
 			array( 
 				'default'   => 'light',
 				'capability' => 'edit_theme_options',
-				'sanitize_callback' => 'sanitize_text_field'
+				'sanitize_callback' => 'perfetta_sanitize_bg_color'
 			)
 		);
 		
@@ -113,7 +113,7 @@ if ( isset( $wp_customize ) ) {
 			array( 
 				'default'   => 'dark',
 				'capability' => 'edit_theme_options',
-				'sanitize_callback' => 'sanitize_text_field'
+				'sanitize_callback' => 'perfetta_sanitize_bg_color'
 			)
 		);
 		
@@ -131,7 +131,7 @@ if ( isset( $wp_customize ) ) {
 			array( 
 				'default'   => 'default',
 				'capability' => 'edit_theme_options',
-				'sanitize_callback' => 'sanitize_text_field'
+				'sanitize_callback' => 'perfetta_sanitize_date_format'
 			)
 		);
 		
@@ -318,6 +318,52 @@ if ( isset( $wp_customize ) ) {
 	}
 	
 	add_action( 'customize_register', 'perfetta_init_customizer' );
+}
+
+/*
+ * Sanitization functions
+ */
+
+function perfetta_sanitize_bottom_column($value) {
+	if($value === '1' || $value === '2' || $value === '3') {
+		return $value;
+	}
+	return null;	
+}
+
+function perfetta_sanitize_bg_color($value) {
+	if($value === 'light' || $value === 'dark') {
+		return $value;
+	}
+	return null;
+}
+
+function perfetta_sanitize_font($value) {
+	$fonts = array(
+		'google', 
+		'verdana', 
+		'georgia', 
+		'arial', 
+		'impact', 
+		'tahoma', 
+		'times',
+		'comic sans ms',
+		'courier new',
+		'helvetica'
+	);
+	
+	if(in_array($value, $fonts)) {
+		return $value;
+	}
+	
+	return null;
+}
+
+function perfetta_sanitize_date_format($value) {
+	if($value === 'default' || $value === 'wordpress') {
+		return $value;
+	}
+	return null;
 }
 
 // Add CSS styles generated from GK Cusotmizer settings
