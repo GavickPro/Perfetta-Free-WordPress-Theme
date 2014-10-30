@@ -157,6 +157,10 @@ msgstr  ""
 msgid   "Footer Menu"
 msgstr  ""
 
+#: footer.php:28
+msgid   "Free WordPress Theme designed by "
+msgstr  ""
+
 #: theme-customizer.php:196
 msgid   "Google Font URL for Header"
 msgstr  ""
@@ -248,6 +252,10 @@ msgstr  ""
 
 #: theme-customizer.php:152
 msgid   "Primary Color"
+msgstr  ""
+
+#: footer.php:29
+msgid   "Proudly published with "
 msgstr  ""
 
 #: content-video.php:20 content-video.php:25 content-video.php:27
