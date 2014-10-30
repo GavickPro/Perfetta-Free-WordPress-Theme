@@ -5,10 +5,10 @@
 #
 #, fuzzy
 msgid   ""
-msgstr  "Project-Id-Version: 1.1.0\n"
+msgstr  "Project-Id-Version: 1.1.1\n"
         "Report-Msgid-Bugs-To: \n"
-        "POT-Creation-Date: 2014-10-03 12:12+0200\n"
-        "PO-Revision-Date: 2014-10-03 12:12+0200\n"
+        "POT-Creation-Date: 2014-09-10 12:12+0200\n"
+        "PO-Revision-Date: 2014-10-29 12:12+0200\n"
         "Last-Translator: Tomasz Dziuda <dziudek@gavick.com>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
         "MIME-Version: 1.0\n"
@@ -263,9 +263,21 @@ msgid   "Ready to publish your first post? <a href=\"%1$s\">Get started here</"
         "a>."
 msgstr  ""
 
+#: searchform.php:12
+msgid   "Search"
+msgstr  ""
+
 #: search.php:15
 #, php-format
 msgid   "Search Results for: %s"
+msgstr  ""
+
+#: searchform.php:10
+msgid   "Search for:"
+msgstr  ""
+
+#: searchform.php:11
+msgid   "Search..."
 msgstr  ""
 
 #: header.php:37
