@@ -118,6 +118,15 @@ if ( isset( $wp_customize ) ) {
 		);
 		
 		$wp_customize->add_setting(
+			'perfetta_search_area',
+			array( 
+				'default'   => '0',
+				'capability' => 'edit_theme_options',
+				'sanitize_callback' => 'sanitize_text_field'
+			)
+		);
+		
+		$wp_customize->add_setting(
 			'perfetta_scroll_reveal',
 			array( 
 				'default'   => '1',
@@ -207,7 +216,8 @@ if ( isset( $wp_customize ) ) {
 		    array(
 		        'section'  => 'perfetta_font_options',
 		        'label'    => __('Google Font URL for Header', 'perfetta'),
-		        'type'     => 'text'
+		        'type'     => 'text',
+		        'active_callback' => 'perfetta_show_font_field'
 	    	)
 		);
 			
@@ -237,7 +247,8 @@ if ( isset( $wp_customize ) ) {
 		    array(
 		        'section'  => 'perfetta_font_options',
 		        'label'    => __('Google Font URL for the Body', 'perfetta'),
-		        'type'     => 'text'
+		        'type'     => 'text',
+		        'active_callback' => 'perfetta_show_body_font_field'
 	    	)
 		);
 		
@@ -251,7 +262,8 @@ if ( isset( $wp_customize ) ) {
 		            '1'     => __('1 Column', 'perfetta'),
 		            '2'     => __('2 Columns', 'perfetta'),
 		            '3'     => __('3 Columns', 'perfetta')
-		        )
+		        ),
+		        'priority' => 0
 		    )
 		);
 		
@@ -264,7 +276,8 @@ if ( isset( $wp_customize ) ) {
 		        'choices'  => array(
 		            'dark'     => __('Dark background', 'perfetta'),
 		            'light'     => __('Light background', 'perfetta')
-		        )
+		        ),
+		        'priority' => 1
 		    )
 		);
 		
@@ -277,20 +290,8 @@ if ( isset( $wp_customize ) ) {
 		        'choices'  => array(
 		            'dark'     => __('Dark background', 'perfetta'),
 		            'light'     => __('Light background', 'perfetta')
-		        )
-		    )
-		);
-		
-		$wp_customize->add_control(
-		    'perfetta_scroll_reveal',
-		    array(
-		        'section'  => 'perfetta_layout_options',
-		        'label'    => __('Use Scroll Reveal', 'perfetta'),
-		        'type'     => 'select',
-		        'choices'  => array(
-		            '0'     => __('Disabled', 'perfetta'),
-		            '1'     => __('Enabled', 'perfetta')
-		        )
+		        ),
+		        'priority' => 2
 		    )
 		);
 		
@@ -303,7 +304,28 @@ if ( isset( $wp_customize ) ) {
 		        'choices'  => array(
 		            'default'     => __('Default theme format', 'perfetta'),
 		            'wordpress'     => __('WordPress Date Format', 'perfetta')
-		        )
+		        ),
+		        'priority' => 3
+		    )
+		);
+		
+		$wp_customize->add_control(
+		    'perfetta_search_area',
+		    array(
+		        'section'  => 'perfetta_layout_options',
+		        'label'    => __('Show search area', 'perfetta'),
+		        'type'     => 'checkbox',
+		        'priority' => 4
+		    )
+		);
+		
+		$wp_customize->add_control(
+		    'perfetta_scroll_reveal',
+		    array(
+		        'section'  => 'perfetta_layout_options',
+		        'label'    => __('Use Scroll Reveal', 'perfetta'),
+		        'type'     => 'checkbox',
+		        'priority' => 5
 		    )
 		);
 		
@@ -312,12 +334,25 @@ if ( isset( $wp_customize ) ) {
             array(
                 'section'  => 'perfetta_layout_options',
                 'label'    => __('Enable word-break', 'perfetta'),
-                'type'     => 'checkbox'
+                'type'     => 'checkbox',
+                'priority' => 6
             )
         );
 	}
 	
 	add_action( 'customize_register', 'perfetta_init_customizer' );
+}
+/*
+ * Active callback functions
+ */
+function perfetta_show_font_field($control) {
+    $option = $control->manager->get_setting('perfetta_font');
+    return $option->value() == 'google';
+}
+
+function perfetta_show_body_font_field($control) {
+    $option = $control->manager->get_setting('perfetta_body_font');
+    return $option->value() == 'google';
 }
 
 /*

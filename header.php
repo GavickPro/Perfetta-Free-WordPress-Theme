@@ -40,6 +40,12 @@
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 				
+		<?php if(get_theme_mod('perfetta_search_area', '0') == '1' && !is_search()) : ?>
+		<div id="gk-search-area">
+			<?php get_search_form(); ?>
+		</div>
+		<?php endif; ?>
+				
 		<?php if ( is_active_sidebar( 'top' ) ) : ?>
 		<?php $top_color = get_theme_mod('perfetta_top_color', 'light'); ?>
 		<div id="gk-top"<?php echo $top_color == 'dark' ? '' : ' class="light-bg"'; ?> role="complementary">

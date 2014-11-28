@@ -7,8 +7,8 @@
 msgid   ""
 msgstr  "Project-Id-Version: 1.1.1\n"
         "Report-Msgid-Bugs-To: \n"
-        "POT-Creation-Date: 2014-09-10 12:12+0200\n"
-        "PO-Revision-Date: 2014-10-29 12:12+0200\n"
+        "POT-Creation-Date: 2014-11-28 15:02+0200\n"
+        "PO-Revision-Date: 2014-11-28 15:02+0200\n"
         "Last-Translator: Tomasz Dziuda <dziudek@gavick.com>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
         "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr  ""
 msgid   ", "
 msgstr  ""
 
-#: theme-customizer.php:238
+#: theme-customizer.php:262
 msgid   "1 Column"
 msgstr  ""
 
@@ -41,7 +41,7 @@ msgstr  ""
 msgid   "1 Comment"
 msgstr  ""
 
-#: theme-customizer.php:239
+#: theme-customizer.php:263
 msgid   "2 Columns"
 msgstr  ""
 
@@ -49,7 +49,7 @@ msgstr  ""
 msgid   "2 Comments"
 msgstr  ""
 
-#: theme-customizer.php:240
+#: theme-customizer.php:264
 msgid   "3 Columns"
 msgstr  ""
 
@@ -66,7 +66,7 @@ msgstr  ""
 msgid   "All posts by %s"
 msgstr  ""
 
-#: theme-customizer.php:235
+#: theme-customizer.php:259
 msgid   "Amount of bottom columns"
 msgstr  ""
 
@@ -82,7 +82,7 @@ msgstr  ""
 msgid   "Blog Archives"
 msgstr  ""
 
-#: theme-customizer.php:205
+#: theme-customizer.php:228
 msgid   "Body Font"
 msgstr  ""
 
@@ -95,11 +95,11 @@ msgstr  ""
 msgid   "Category Archives: %s"
 msgstr  ""
 
-#: theme-customizer.php:262
+#: theme-customizer.php:288
 msgid   "Color of the bottom"
 msgstr  ""
 
-#: theme-customizer.php:249
+#: theme-customizer.php:274
 msgid   "Color of the top"
 msgstr  ""
 
@@ -116,20 +116,16 @@ msgstr  ""
 msgid   "Daily Archives: %s"
 msgstr  ""
 
-#: theme-customizer.php:252 theme-customizer.php:265
+#: theme-customizer.php:277 theme-customizer.php:291
 msgid   "Dark background"
 msgstr  ""
 
-#: theme-customizer.php:288
+#: theme-customizer.php:302
 msgid   "Date format"
 msgstr  ""
 
-#: theme-customizer.php:291
+#: theme-customizer.php:305
 msgid   "Default theme format"
-msgstr  ""
-
-#: theme-customizer.php:278
-msgid   "Disabled"
 msgstr  ""
 
 #: comments-template.php:30 comments-template.php:65 page.php:34
@@ -137,19 +133,15 @@ msgstr  ""
 msgid   "Edit"
 msgstr  ""
 
-#: theme-customizer.php:301
+#: theme-customizer.php:336
 msgid   "Enable word-break"
-msgstr  ""
-
-#: theme-customizer.php:279
-msgid   "Enabled"
 msgstr  ""
 
 #: theme-customizer.php:14
 msgid   "Font options"
 msgstr  ""
 
-#: theme-customizer.php:164
+#: theme-customizer.php:186
 msgid   "Footer Color"
 msgstr  ""
 
@@ -161,15 +153,15 @@ msgstr  ""
 msgid   "Free WordPress Theme designed by "
 msgstr  ""
 
-#: theme-customizer.php:196
+#: theme-customizer.php:218
 msgid   "Google Font URL for Header"
 msgstr  ""
 
-#: theme-customizer.php:226
+#: theme-customizer.php:249
 msgid   "Google Font URL for the Body"
 msgstr  ""
 
-#: theme-customizer.php:175
+#: theme-customizer.php:197
 msgid   "Header Font"
 msgstr  ""
 
@@ -186,11 +178,11 @@ msgstr  ""
 msgid   "Layout & Features"
 msgstr  ""
 
-#: theme-customizer.php:253 theme-customizer.php:266
+#: theme-customizer.php:278 theme-customizer.php:292
 msgid   "Light background"
 msgstr  ""
 
-#: theme-customizer.php:140
+#: theme-customizer.php:162
 msgid   "Logo image"
 msgstr  ""
 
@@ -250,7 +242,7 @@ msgstr  ""
 msgid   "Posts navigation"
 msgstr  ""
 
-#: theme-customizer.php:152
+#: theme-customizer.php:174
 msgid   "Primary Color"
 msgstr  ""
 
@@ -288,6 +280,10 @@ msgstr  ""
 msgid   "Search..."
 msgstr  ""
 
+#: theme-customizer.php:316
+msgid   "Show search area"
+msgstr  ""
+
 #: header.php:37
 msgid   "Skip to content"
 msgstr  ""
@@ -315,7 +311,7 @@ msgstr  ""
 msgid   "Top widget area"
 msgstr  ""
 
-#: theme-customizer.php:275
+#: theme-customizer.php:326
 msgid   "Use Scroll Reveal"
 msgstr  ""
 
@@ -324,7 +320,7 @@ msgstr  ""
 msgid   "View all posts by %s"
 msgstr  ""
 
-#: theme-customizer.php:292
+#: theme-customizer.php:306
 msgid   "WordPress Date Format"
 msgstr  ""
 

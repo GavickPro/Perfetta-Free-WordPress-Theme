@@ -25,7 +25,7 @@ $bottom_color = get_theme_mod('perfetta_bottom_color', 'dark');
 			<div id="gk-copyrights">
 				<?php do_action( 'perfetta_credits' ); ?>
 				
-				<p class="copyright"><?php _e('Free WordPress Theme designed by ','perfetta'); ?><a href="https://www.gavick.com/wordpress-themes.html" rel="nofollow">GavickPro</a></p>
+				<p class="copyright"><?php _e('Free WordPress Theme designed by ','perfetta'); ?><a href="https://www.gavick.com/wordpress-themes.html">GavickPro</a></p>
 				<p class="poweredby"><?php _e('Proudly published with ','perfetta'); ?><a href="http://wordpress.org/">WordPress</a></p>
 			</div><!-- .site-info -->
 		</footer><!-- end of #gk-footer -->
