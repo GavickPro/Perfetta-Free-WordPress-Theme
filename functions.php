@@ -283,6 +283,12 @@ function perfetta_meta() {
 			esc_attr( sprintf( __( 'View all posts by %s', 'perfetta' ), get_the_author() ) ),
 			get_the_author()
 		);
+		
+		if(get_theme_mod('perfetta_show_author_avatar', '0') == '1') {
+			echo '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" class="avatar-link">';
+			echo get_avatar(get_the_author_meta('ID'), apply_filters('perfetta_author_avatar_size', '32'));
+			echo '</a>';
+		}
 	}
 	
 	// Translators: used between list items, there is a space after the comma.

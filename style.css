@@ -486,11 +486,15 @@ img.wp-smiley,
 	color: #ca3c08;
 }
 
+#content > article > aside > div {
+	padding: 15px 0 0 0;	
+}
+
 #content > article > aside span {
 	display: inline;
 	font-size: 12px;
 	font-style: italic;
-	line-height: 50px;
+	line-height: 20px;
 }
 
 #content .categories-links,
@@ -501,7 +505,7 @@ img.wp-smiley,
 
 #content .categories-links {
 	display: block;
-	margin-top: -12px;
+	margin-top: 5px;
 	padding: 0 10px;
 }
 
@@ -1306,6 +1310,19 @@ footer.entry-meta {
 	font-size: 20px!important;
 	font-style: normal!important;
 	line-height: 3!important;
+}
+
+.post-meta .avatar-link {
+	border-radius: 50%;
+	display: block;
+	float: none;
+	margin: 5px auto;
+	overflow: hidden;
+	width: 32px;
+}
+
+.post-meta .avatar-link > img {
+	display: block;
 }
 
 #content > .format-aside > aside > time,
