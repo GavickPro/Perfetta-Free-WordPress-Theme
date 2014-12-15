@@ -109,7 +109,7 @@ add_action( 'after_setup_theme', 'perfetta_setup' );
  * @return void
  */
 function perfetta_add_editor_styles() {
-    add_editor_style('editor.css');
+    add_editor_style(array('editor.css', 'css/font.awesome.css', 'https://fonts.googleapis.com/css?family=Raleway'));
 }
 add_action('init', 'perfetta_add_editor_styles');
 
