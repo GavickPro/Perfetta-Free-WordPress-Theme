@@ -18,9 +18,15 @@ $bottom_color = get_theme_mod('perfetta_bottom_color', 'dark');
 			</div>
 			<?php endif; ?>
 			
+			<?php if(get_theme_mod('perfetta_social_icons_footer', '1') == '1') : ?>
 			<div id="gk-social">
 				<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'social-menu' ) ); ?>
 			</div>
+			<?php else : ?>
+			<div id="gk-footer-nav">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu' ) ); ?>
+			</div>
+			<?php endif; ?>
 			
 			<div id="gk-copyrights">
 				<?php do_action( 'perfetta_credits' ); ?>

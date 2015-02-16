@@ -135,15 +135,15 @@ pre {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.icon-email:before { content: "\f003"; }
-.icon-fb:before { content: "\f082"; }
-.icon-gplus:before { content: "\f0d4"; }
-.icon-phone:before { content: "\f095"; }
-.icon-pinterest:before { content: "\f0d2"; }
-.icon-rss:before { content: "\f143"; }
-.icon-star:before { content: "\f005"; }
-.icon-twitter:before { content: "\f081"; }
-.icon-youtube:before { content: "\f166"; }
+#gk-social .icon-email:before { content: "\f003"; }
+#gk-social .icon-fb:before { content: "\f082"; }
+#gk-social .icon-gplus:before { content: "\f0d4"; }
+#gk-social .icon-phone:before { content: "\f095"; }
+#gk-social .icon-pinterest:before { content: "\f0d2"; }
+#gk-social .icon-rss:before { content: "\f143"; }
+#gk-social .icon-star:before { content: "\f005"; }
+#gk-social .icon-twitter:before { content: "\f081"; }
+#gk-social .icon-youtube:before { content: "\f166"; }
 
 /**
  * 1.2 Basic stuff
@@ -193,7 +193,8 @@ pre {
 .comment-form-url:after,
 .comment-body:before,
 .comment-body:after,
-#gk-social-icons {
+#gk-social-icons:after,
+#gk-footer-nav:after {
 	content: "";
 	display: table;
 }
@@ -2197,20 +2198,24 @@ select {
 #gk-top dl dt:nth-child(5n),
 #gk-bottom dl dt:nth-child(5n) { clear: both; }
 
-#gk-social {
+#gk-social,
+#gk-footer-nav {
 	font-size: 20px;
 	margin-bottom: 20px;
 	margin-top: 50px;
 	text-align: center;
 }
 
-.social-menu {
+.social-menu,
+.footer-menu {
 	padding: 0;
 	text-align: center;
 }
 
 .social-menu li,
-.social-menu li > a {
+.social-menu li > a,
+.footer-menu li,
+.footer-menu li > a {
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-ms-transition: all 0.3s ease-out;
@@ -2223,12 +2228,26 @@ select {
 	width: 20px;
 }
 
+.footer-menu li > a,
 .social-menu li > a {
 	display: block;
 	margin: 0;
 	position: relative;
 	text-indent: -9999px;
 	top: -32px;
+}
+
+body .footer-menu li {
+	list-style-type: none;
+	opacity: 1;
+	width: auto;
+}
+body .footer-menu li > a {
+	font-size: 14px;
+	opacity: 1;
+	text-indent: 0;
+	top: 0;
+	width: auto;
 }
 
 #gk-copyrights {

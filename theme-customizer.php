@@ -161,6 +161,15 @@ if ( isset( $wp_customize ) ) {
                 'sanitize_callback' => 'sanitize_text_field'
             )
         );
+        
+        $wp_customize->add_setting(
+            'perfetta_social_icons_footer',
+            array(
+                'default'   => '1',
+                'capability' => 'edit_theme_options',
+                'sanitize_callback' => 'sanitize_text_field'
+            )
+        );
 		
 		// Add control for the settings
 		$wp_customize->add_control(
@@ -357,6 +366,16 @@ if ( isset( $wp_customize ) ) {
                 'priority' => 7
             )
         );
+        
+        $wp_customize->add_control(
+            'perfetta_social_icons_footer',
+            array(
+                'section'  => 'perfetta_layout_options',
+                'label'    => __('Show social icons at footer', 'perfetta'),
+                'type'     => 'checkbox',
+                'priority' => 8
+            )
+        );
 	}
 	
 	add_action( 'customize_register', 'perfetta_init_customizer' );
@@ -488,7 +507,10 @@ function perfetta_customizer_css() {
         #gk-copyrights a,
         .nav-menu > li > a:active,
         .nav-menu > li > a:focus,
-        .nav-menu > li > a:hover {
+        .nav-menu > li > a:hover,
+        body .footer-menu li > a:active,
+        body .footer-menu li > a:focus,
+        body .footer-menu li > a:hover {
         	color: <?php echo $primary_color; ?>;
         }
         button,
@@ -512,7 +534,9 @@ function perfetta_customizer_css() {
         }
         #gk-copyrights,
         .social-menu li,
-        .social-menu li > a {
+        .social-menu li > a,
+        body .footer-menu li,
+        body .footer-menu li > a {
         	color: <?php echo $footer_color; ?>;
         }
     </style>
