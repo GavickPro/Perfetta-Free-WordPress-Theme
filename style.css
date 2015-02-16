@@ -144,6 +144,11 @@ pre {
 #gk-social .icon-star:before { content: "\f005"; }
 #gk-social .icon-twitter:before { content: "\f081"; }
 #gk-social .icon-youtube:before { content: "\f166"; }
+#gk-social .icon-behance:before { content: "\f1b5"; }
+#gk-social .icon-flickr:before { content: "\f16e"; }
+#gk-social .icon-instagram:before { content: "\f16d"; }
+#gk-social .icon-linkedin:before { content: "\f08c"; }
+#gk-social .icon-vimeo:before { content: "\f194"; }
 
 /**
  * 1.2 Basic stuff
