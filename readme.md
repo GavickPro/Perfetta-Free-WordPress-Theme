@@ -51,6 +51,13 @@ Photos are released under the CC0 license - http://creativecommons.org/publicdom
 
 ## Changelog
 
+### 1.3.0 - February 16, 2015
+
+- Added option for display user avatar in the entry meta
+- Added option to disable social icons in the footer menu
+- Font Awesome upgraded to v.4.3.0
+- Added 5 new social icons for the footer menu: behance, flickr, instagram, linkedin and vimeo
+
 ### 1.2.0 - November 28, 2014
 
 - Improved Theme Customizer inputs and dependencies
